@@ -36,3 +36,9 @@ jobs:
           fail-on-alert: true
           gh-pages-branch: main
           benchmark-data-dir-path: doc/benchmarks
+
+      - shell: bash
+      run: |
+          cd ../..
+          pnpm run biome-check --write
+          
