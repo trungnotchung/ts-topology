@@ -1,6 +1,7 @@
 name: Benchmark.js Example
 on:
   pull_request:
+    types: [closed]
     branches: [main]
 
 permissions:
