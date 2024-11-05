@@ -30,8 +30,8 @@ jobs:
           tool: 'benchmarkjs'
           output-file-path: packages/object/benchmark-output.txt
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          auto-push: true
-          alert-threshold: '200%'
+          # auto-push: true
+          # alert-threshold: '200%'
           comment-on-alert: true
           fail-on-alert: true
           gh-pages-branch: main
