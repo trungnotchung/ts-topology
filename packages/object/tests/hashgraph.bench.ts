@@ -44,12 +44,12 @@ function benchmarkForAddWinSet(
 
 const suite = new Benchmark.Suite();
 
-benchmarkForAddWinSet("Create HashGraph with 1000 vertices", 1, 1000, false);
+benchmarkForAddWinSet("Create HashGraph with 1000 vertices", 1, 10000, false);
 
 benchmarkForAddWinSet(
 	"Create 2 CROs (1000 vertices each) and Merge",
 	2,
-	1000,
+	10000,
 	true,
 );
 
