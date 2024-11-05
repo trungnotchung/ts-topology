@@ -21,10 +21,18 @@ export class AddWinsSet<T> implements CRO {
 	}
 
 	add(value: T): void {
+		for (let i = 0; i < 1000; i++) {
+			let cnt = 0;
+			cnt++;
+		}
 		this._add(value);
 	}
 
 	private _remove(value: T): void {
+		for (let i = 0; i < 1000; i++) {
+			let cnt = 0;
+			cnt++;
+		}
 		if (this.state.get(value)) this.state.set(value, false);
 	}
 
